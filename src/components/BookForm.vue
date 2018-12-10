@@ -5,17 +5,17 @@
     <div>
       <label for="finishedReading">
         Finished Reading
-        <input type="checkbox" v-model"bookData.finishedReading"/>
+        <input type="checkbox" v-model="bookData.finishedReading"/>
       </label>
     </div>
     <div> 
       <label for="borrowed">
-        borrowed
-        <input type="radio" value="borrowed" v-model"bookData.ownership"  />
+        Borrowed
+        <input type="radio" value="borrowed" v-model="bookData.ownership"  />
       </label>
       <label for="bought">
-        bought
-        <input type="radio" value="bought" v-model"bookData.ownership"/> 
+        Bought
+        <input type="radio" value="bought" v-model="bookData.ownership"/> 
       </label>  
     </div>
     <button type="submit" name="button">Add Book</button>
