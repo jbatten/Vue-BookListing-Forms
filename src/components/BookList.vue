@@ -46,7 +46,7 @@ export default {
   {
     appendBook(bookData) {
       this.books.push({
-         title: bookDatabook.bookTitle, 
+         title: bookData.bookTitle, 
          author: bookData.bookAuthor, 
          finishedReading: bookData.finishedReading 
       });
