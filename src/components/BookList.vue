@@ -31,8 +31,8 @@ export default {
     BookForm
   },
   methods: {
-    appendBook(bookTitle, bookAuthor) {
-      this.books.push({ title: bookDatabook.Title, author: bookData.Author, finishedReading: bookData.finishedReading });
+    appendBook(bookData) {
+      this.books.push({ title: bookDatabook.title, author: bookData.author, finishedReading: bookData.finishedReading });
     }
   }
 };
