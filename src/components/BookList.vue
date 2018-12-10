@@ -46,7 +46,7 @@ export default {
           title: "Amusing Ourselves to Death", 
           author: "Neil Postman", 
           finishedReading: true,
-          ownership: "borrowed",  
+          ownership: "borrowed"
           }
       ],
       filters: ["bought", "borrowed"],
@@ -65,7 +65,7 @@ export default {
     searchedBooks() {
       const searchFilter = book => {
         return book.title.ToLowerCase().match(this.searchInput.toLowerCase());
-      };
+      }
       return _.filter(this.books, searchFilter);
     }
   },
