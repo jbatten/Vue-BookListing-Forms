@@ -20,9 +20,21 @@ export default {
       title: "All Books",
       states: ["Want to Read", "Read", "Reading"],
       books: [
-        { title: "Self-Reliance", author: "Ralph Waldo Emerson", finishedReading: true },
-        { title: "American Gods", author: "Neil Gaiman", finishedReading: false },
-        { title: "Amusing Ourselves to Death", author: "Neil Postman", finishedReading: true  }
+        { 
+          title: "Self-Reliance", 
+          author: "Ralph Waldo Emerson", 
+          finishedReading: true
+        },
+        { 
+          title: "American Gods", 
+          author: "Neil Gaiman", 
+          finishedReading: false 
+        },
+        { 
+          title: "Amusing Ourselves to Death", 
+          author: "Neil Postman", 
+          finishedReading: true  
+          }
       ]
     };
   },
@@ -30,9 +42,14 @@ export default {
     BookItem,
     BookForm
   },
-  methods: {
+  methods: 
+  {
     appendBook(bookData) {
-      this.books.push({ title: bookDatabook.title, author: bookData.author, finishedReading: bookData.finishedReading });
+      this.books.push({
+         title: bookDatabook.bookTitle, 
+         author: bookData.bookAuthor, 
+         finishedReading: bookData.finishedReading 
+      });
     }
   }
 };
