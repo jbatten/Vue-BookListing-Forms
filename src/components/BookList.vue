@@ -62,8 +62,7 @@ export default {
     filteredBooks() {
       return _.filter(this.books, ["ownership", this.holding])
     },
-    searchedBooks()
-    {
+    searchedBooks() {
       const searchFilter = book => {
         return book.title.ToLowerCase().match(this.searchInput.toLowerCase());
       };
