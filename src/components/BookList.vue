@@ -1,11 +1,7 @@
 <template>
   <div>
     <h1>{{title}}</h1>
-<<<<<<< HEAD
-    <input type="text" placeholder="Search Books"></input>
-=======
     <input type="text" placeholder="Search Books" v-model="searchInput">
->>>>>>> e3770ff30afc475a5ed6ee4fac26e81be9d6ba2d
     <ul class="exists">
       <book-item v-for='book in searchedBooks' :key='book.id' :book='book'></book-item>
     </ul>
@@ -63,7 +59,6 @@ export default {
     BookForm
   },
   computed:{
-<<<<<<< HEAD
     filteredBooks(){
       return _.filter(this.books, ["ownership", this.holding])
     },
@@ -71,15 +66,6 @@ export default {
       const searchFilter = book => {
         return book.title.toLowerCase().match(this.searchInput.toLowerCase());
         };
-=======
-    filteredBooks() {
-      return _.filter(this.books, ["ownership", this.holding]);
-    },
-    searchedBooks() {
-      const searchFilter = book => {
-        return book.title.ToLowerCase().match(this.searchInput.toLowerCase());
-      }
->>>>>>> e3770ff30afc475a5ed6ee4fac26e81be9d6ba2d
       return _.filter(this.books, searchFilter);
     }
   },
